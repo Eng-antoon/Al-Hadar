@@ -416,7 +416,7 @@ a:focus {
 }
 
 .header-top {
-  background: #3b3b3e;
+  background: #1f2518c7;
   color: #919194;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -1432,6 +1432,18 @@ h3.quote::before {
     width: 100%;
     text-align: center;
   }
+}
+
+@media(max-width:1200px){
+
+.navbar-brand{
+margin-left: 0px;
+margin-right: 0px;
+
+  width: 87%;
+}
+
+
 }
 
 /*# sourceMappingURL=maps/style.css.map */
