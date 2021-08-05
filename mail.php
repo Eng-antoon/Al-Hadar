@@ -3,10 +3,10 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "USEREMAIL@gmail.com";
+        $mail_to = "antoonkamel20000@outlook.com";
         
         # Sender Data
-        // $subject = trim($_POST["subject"]);
+        $subject = trim($_POST["subject"]);
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
