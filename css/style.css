@@ -499,8 +499,16 @@ ul.dropdown-menu li {
 }
 
 .bg-1 {
+  background: url("../images/contactus.jpg") no-repeat 50% 19%;
+  background-size: cover;
+}
+
+/* Tony edit */
+.backggg{
+
   background: url("../images/about.jpg") no-repeat 50% 50%;
   background-size: cover;
+
 }
 
 .bg-2 {
@@ -561,9 +569,9 @@ ul.dropdown-menu li {
   content: "";
   left: 100px;
   top: 0px;
-  width: 34%;
-  min-height: 360px;
-  background: url("../images/about/home-8.jpg") no-repeat;
+  width: 40%;
+  min-height: 438px;
+  background: url("../images/homepic.jpg") no-repeat;
   background-size: cover;
   border-radius: 10%;
 }
