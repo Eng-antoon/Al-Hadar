@@ -1338,8 +1338,9 @@ h3.quote::before {
     margin: 6px 0px;
   }
   .widget {
-    margin-bottom: 30px;
-    padding-bottom: 0px;
+    /* margin-bottom: 30px;
+    padding-bottom: 0px; */
+    line-height: 0%;
   }
   .dropdown-menu {
     display: none;
@@ -1443,7 +1444,34 @@ margin-right: 0px;
   width: 87%;
 }
 
-
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+.heha{
+display: flex;
+flex-direction: column;
+align-items: center;
+  text-align: center;
+   margin: 0%;
+    padding: 0%;
+    line-height: 0%;
+
+}
+.nav-color-active{
+
+color: #ec7b2e;
+
+ }
+.listservices{
+
+  text-align: initial;
+
+
+}
+.aligntext{
+
+text-align: center;
+
+}
