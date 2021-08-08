@@ -1,21 +1,21 @@
 console.log(i18next);
 
 i18next.init({
-  // lng: currentLanguage, // if you're using a language detector, do not define the lng option
+  lng: "ar", // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
       translation: {
-        projecthead: "Projects",
-        desc: "Project Description",
-        loca: "Project Location",
+        titlehead: "About the project",
+        locationhead: "The Location of the Project",
+        desc: "Simple Description",
       },
     },
     ar: {
       translation: {
-        projecthead: "المشاريع",
-        desc: "نبذة مختصرة عن المشروع",
-        loca: "مكان المشروع",
+        titlehead: "حول المشروع",
+        locationhead: "موقع المشروع",
+        desc: "وصف بسيط عن المشروع",
 
       },
     },
@@ -23,7 +23,7 @@ i18next.init({
 });
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
-document.querySelector("#projecthead").innerHTML = i18next.t("projecthead");
+document.querySelector("#titlehead").innerHTML = i18next.t("titlehead");
+document.querySelector("#locationhead").innerHTML = i18next.t("locationhead");
 document.querySelector("#desc").innerHTML = i18next.t("desc");
-document.querySelector("#loca").innerHTML = i18next.t("loca");
 

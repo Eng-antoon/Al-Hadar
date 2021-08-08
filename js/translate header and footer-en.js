@@ -17,7 +17,6 @@ i18next.init({
         linkat: "Quick Links",
         adress: "P.O Box 18378 Ajman.UAE",
         footabout: "About Al Hadar",
-        headcall: "Call Us",
 
       },
     },
@@ -35,7 +34,6 @@ i18next.init({
         linkat: "الروابط",
         adress: "صندوق بريد 18378 عجمان",
         footabout: "عن شركتنا",
-        headcall: "تواصل معنا",
 
 
         // Footer
@@ -63,7 +61,6 @@ document.querySelectorAll(".footmen")[4].innerHTML = i18next.t("contacts");
 document.querySelectorAll(".footmen")[5].innerHTML = i18next.t("jobs");
 document.querySelector("#footabout").innerHTML = i18next.t("footabout");
 document.querySelector("#adress").innerHTML = i18next.t("adress");
-document.querySelector("#headcall").innerHTML = i18next.t("headcall");
 
 
 
