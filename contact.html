@@ -37,7 +37,7 @@
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-2 col-md-4">
 						<div class="header-top-socials text-center text-lg-left text-md-left">
-							<a  href="https://www.facebook.com/themefisher" target="_blank"><i   class="fab fa-whatsapp fa-2x"></i></a>
+							<a  href="https://api.whatsapp.com/send?phone=+971529144779" target="_blank"><i   class="fab fa-whatsapp fa-2x"></i></a>
 						</div>
 					</div>
 					<div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
@@ -104,12 +104,12 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <span class="text-white">Contact Us</span>
-          <h1 class="text-capitalize mb-4 text-lg">We Love To Be In Touch</h1>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+          <span id="titlepage" class="text-white">Contact Us</span>
+          <h1 id="phrase" class="text-capitalize mb-4 text-lg">We Love To Be In Touch</h1>
+          <ul class="list-inline" style="text-align: center;">
+            <li id="home" class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Contact Us</a></li>
+            <li id="contactpage" class="list-inline-item"><a href="#" class="text-white-50">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -125,44 +125,44 @@
                  <!-- form message -->
                     <div class="row">
                         <div class="col-12">
-                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            <div id="msgdelete" class="alert alert-success contact__msg" style="display: none" role="alert">
                                 Your message was sent successfully.
                             </div>
                         </div>
                     </div>
                     <!-- end message -->
-                    <span class="text-color">Send a message</span>
-                    <h3 class="text-md mb-4">Contact Information</h3>
+                    <span id="sendmsg" class="text-color">Send a message</span>
+                    <h3 id="contactinfo" class="text-md mb-4">Contact Information</h3>
                     <div class="form-group">
-                        <input name="name" type="text" class="form-control" placeholder="Your Name">
+                        <input id="nameplace" name="name" type="text" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <input name="email" type="email" class="form-control" placeholder="Email Address">
+                        <input id="emailplace" name="email" type="email" class="form-control" placeholder="Email Address">
                     </div>
                     <div class="form-group-2 mb-4">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        <textarea id="yourmsgplace" name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
                     </div>
-                    <button class="btn btn-main" name="submit" type="submit" style="border-radius: 5%;">Send Message</button>
+                    <button id="butonsub" class="btn btn-main" name="submit" type="submit" style="border-radius: 5%;">Send Message</button>
                 </form>
             </div>
 
             <div class="col-lg-5 col-sm-12">
                 <div class="contact-content pl-lg-5 mt-5 mt-lg-0">
                     <!-- <span class="text-muted">We are Professionals</span> -->
-                    <h2 class="mb-5 mt-2">We are always at your service</h2>
+                    <h2 id="atyourserv" class="mb-5 mt-2">We are always at your service</h2>
 
                     <ul class="address-block list-unstyled">
                         <li>
-                            <i class="ti-direction mr-3"></i>P.O Box 18378 Ajman.UAE
+                            <i id="address" class="ti-direction mr-3"></i>P.O Box 18378 Ajman.UAE
                         </li>
                         <li>
-                            <i class="ti-email mr-3"></i>Email: info@Alhader.com
+                            <i  class="ti-email mr-3"></i> info@Alhader.com
                         </li>
                         <li>
-                            <i class="ti-mobile mr-3"></i>Phone:+971-6-7451105
+                            <i class="ti-mobile mr-3"></i>+971-6-7451105
                         </li>
 						<li>
-                            <i class="ti-mobile mr-3"></i>Phone:+971-6-7451106
+                            <i class="ti-mobile mr-3"></i>+971-6-7451106
                         </li>
                     </ul>
 
@@ -243,8 +243,8 @@
 						<br>
 						<br>
 					<h6><a href="mailto:info@alhader.com" >info@alhader.com</a></h6>
-					<a href="tel:+971-6-7451105"><span class="text-color h4">+971-6-7451105</span></a><br>
-					<a href="tel:+971-6-7451106"><span class="text-color h4">+971-6-7451106</span></a><br>
+					<a id="tele1" href="tel:+971-6-7451105"><span class="text-color h4">+971-6-7451105</span></a><br>
+					<a id="tele2" href="tel:+971-6-7451106"><span class="text-color h4">+971-6-7451106</span></a><br>
 					<a href="#"><span id="adress" class="text-color h4">P.O Box 18378 Ajman.UAE</span></a>
 
 				</div>
@@ -263,7 +263,7 @@
 				<div class="col-lg-4 col-md-12 col-sm-12 text-left text-lg-left">
 					<ul class="list-inline footer-socials">
 						<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="ti-facebook mr-2"></i>Facebook</a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/"><i class="ti-instagram mr-2"></i>Instagram</a></li>
+						<li class="list-inline-item"><a href="instagram.com/alhader.bldg/"><i class="ti-instagram mr-2"></i>Instagram</a></li>
 					</ul>
 				</div>
 			</div>
@@ -305,7 +305,7 @@
 
 	<!-- Translation Files localy -->
 	<script src="js/translate header and footer-en.js"></script>
-	<script src="js/translate index-en.js"></script>
+	<script src="js/translate contact-en.js"></script>
 
 
   </body>

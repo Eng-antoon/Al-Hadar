@@ -3,55 +3,53 @@
 // const currentLanguage = localStorage.getItem("lang");
 
 i18next.init({
-  lng: currentLanguage, // if you're using a language detector, do not define the lng option
+  lng: "ar", // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
       translation: {
         // Header
 
-        // "home": "Home",
-        // 'about':"About",
-        // 'services':"Services",
-        // 'projects':"Projects",
-        // 'contacts':"Contact Us",
-        // 'language':"Language",
-        // 'linkat':"Links",
-        // 'pageend':"We would love to hear from you",
-        // 'footabout':"About Abedous",
-        adress: "2 Al Nuaimia - Ajman - United Arab Emirates.",
-        head1contact: "Contact Us",
-        headingline: "We will be honoured to be in touch with you",
-        tele: "+971-67312884",
-        namecontact: "Name",
-        emailcontact: "Email",
-        messagecontact: "Please write your message",
-        buttonsubmit: "Send Message",
+        address: "P.O Box 18378 Ajman.UAE",
+        titlepage: "Contact Us",
+        phrase: "We Love To Be In Touch",
+        home: "Home",
+        msgdelete: "Your message was sent successfully.",
+        contactpage: "Contact Us",
+        sendmsg: "Send a message",
+        contactinfo: "Contact Information",
+        emailplace: "Email Address",
+        nameplace: "Your Name",
+        yourmsgplace: "Your Message",
+        butonsub: "Send Message",
+        atyourserv: "We are always at your service",
+        emial: "Email:",
+        
+
+
+      
         // About Us Page
       },
     },
     ar: {
       translation: {
         // Header
-
-        // "home": "الصفحة الرئيسية",
-        // 'about':"معلومات عنا",
-        // 'services':"خدماتنا",
-        // 'projects':"مشاريعنا",
-        // 'contacts':"تواصل معنا",
-        // 'language':"اللغة",
-        // 'linkat':"الروابط",
-        // 'pageend':"يسعدنا التواصل دائما",
-        // 'footabout':"عن شركتنا",
-        adress: "2 النعومية - عجان - الامارات العربية المتحدة",
-        head1contact: "تواصل معنا",
-        headingline: "يشرفنا أن نتواصل معك",
-        tele: "971-67312884+",
-        namecontact: "الاسم",
-        emailcontact: "البريد الالكتروني",
-        messagecontact: "تفضل بكتابة ما ترغب به",
-        buttonsubmit: "إرسال",
-
+        titlepage: "تواصل معنا",
+        phrase: "نحب أن نكون على اتصال",
+        home: "الصفحة الرئيسية",
+        msgdelete: "لقد تم ارسال رسالتك بنجاح.",
+        contactpage: "تواصل معنا",
+        sendmsg: "ارسل رسالة",
+        contactinfo: "معلومات الاتصال",
+        emailplace: "البريد الإلكتروني",
+        nameplace: "الاسم",
+        yourmsgplace: "رسالتك",
+        butonsub: "ارسال",
+        atyourserv: "نحن دائما في خدمتكم",
+        emial: "البريد الالكتروني:",
+        
+        address: "صندوق بريد 18378 عجمان",
+        
         // Footer
       },
     },
@@ -59,28 +57,21 @@ i18next.init({
 });
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
-// document.querySelectorAll(".nav-link")[0].innerHTML = i18next.t('home');
-// document.querySelectorAll(".nav-link")[1].innerHTML = i18next.t('about');
-// document.querySelectorAll(".nav-link")[2].innerHTML = i18next.t('services');
-// document.querySelectorAll(".nav-link")[3].innerHTML = i18next.t('projects');
-// document.querySelectorAll(".nav-link")[4].innerHTML = i18next.t('contacts');
-// document.querySelectorAll(".nav-link")[5].innerHTML = i18next.t('language');
 
-// document.querySelectorAll("#footer-li>a")[0].innerHTML = i18next.t('home');
-// document.querySelectorAll("#footer-li>a")[1].innerHTML = i18next.t('about');
-// document.querySelectorAll("#footer-li>a")[2].innerHTML = i18next.t('services');
-// document.querySelectorAll("#footer-li>a")[3].innerHTML = i18next.t('projects');
-// document.querySelectorAll("#footer-li>a")[4].innerHTML = i18next.t('contacts');
-// document.querySelector("#linkat").innerHTML = i18next.t('linkat');
-// document.querySelector("#adress").innerHTML = i18next.t('adress');
-// document.querySelector("#footabout").innerHTML = i18next.t('footabout');
-// document.querySelector("#pageend").innerHTML = i18next.t('pageend');
-document.querySelector("#head1contact").innerHTML = i18next.t("head1contact");
-document.querySelector("#headingline").innerHTML = i18next.t("headingline");
-document.querySelectorAll("#contactinfo>li")[0].innerHTML = i18next.t("adress");
-document.querySelector("#numbercontact").innerHTML = i18next.t("tele");
 
-document.querySelector("#namecontact").setAttribute("placeholder", i18next.t("namecontact"));
-document.querySelector("#emailcontact").setAttribute("placeholder", i18next.t("emailcontact"));
-document.querySelector("#messagecontact").setAttribute("placeholder", i18next.t("messagecontact"));
-document.querySelector("#buttonsubmit").innerText = i18next.t("buttonsubmit")
+// document.querySelector("#address").innerText = i18next.t("address")
+document.querySelector("#titlepage").innerText = i18next.t("titlepage")
+document.querySelector("#phrase").innerText = i18next.t("phrase")
+document.querySelector("#home").innerText = i18next.t("home")
+document.querySelector("#contactpage").innerText = i18next.t("contactpage")
+document.querySelector("#msgdelete").innerText = i18next.t("msgdelete")
+document.querySelector("#sendmsg").innerText = i18next.t("sendmsg")
+document.querySelector("#contactinfo").innerText = i18next.t("contactinfo")
+document.querySelector("#nameplace").setAttribute("placeholder", i18next.t("nameplace"));
+document.querySelector("#emailplace").setAttribute("placeholder", i18next.t("emailplace"));
+document.querySelector("#yourmsgplace").setAttribute("placeholder", i18next.t("yourmsgplace"));
+document.querySelector("#butonsub").innerText = i18next.t("butonsub")
+document.querySelector("#atyourserv").innerText = i18next.t("atyourserv")
+document.querySelector("#emial").innerText = i18next.t("emial")
+
+

@@ -7,7 +7,13 @@ i18next.init({
   resources: {
     en: {
       translation: {
-        servicehead: "Services",
+        titlepage: "About the Service",
+        simpdesc: "Simple Description",
+        titlepage: "About the Service",
+        titlepage: "About the Service",
+        titlepage: "About the Service",
+        titlepage: "About the Service",
+
 
         // About Us Page
       },
@@ -22,4 +28,11 @@ i18next.init({
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
 
-document.querySelector("#servicehead").innerHTML = i18next.t("servicehead");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+document.querySelector("#simpdesc").innerHTML = i18next.t("simpdesc");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
+

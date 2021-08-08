@@ -3,44 +3,59 @@
 // const currentLanguage = localStorage.getItem("lang");
 
 i18next.init({
-  lng: currentLanguage, // if you're using a language detector, do not define the lng option
+  lng: "ar", // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
       translation: {
         // Header
+        titlepage: "About Us",
 
-        abouthead1: "About Us",
-        aaamm: "Why Trusting Abedous Company?",
-        paragraph1about:
-          "Abedous General Contracting has attained its reputation as one of the reliable and diversified contracting firms in Ajman-UAE. Since 2006 Abedous General Contracting LLC has provided its clients with viable solutions to any complexities in their construction needs. The company’s strength lies in traditional construction methods re-enforced by creative, fresh approaches to cutting edge technologies and delivery systems. Abedous Co. has assembled a team of construction professionals that offer a single source solution for all construction related needs. Abedous Co. LLC supports its clients in every aspect from project inception to commission of the fully operational facility.",
+        abouthead1: "Al Hadar Company",
+        head: "About Us",
+        pagename:"About Us",
+        homepage: "Home",
+        briefdesc: "A brief about us",
+        moredesc: "AL Hader General Contracting has attained its reputation as one of the reliable and diversified contracting firms in Ajman-UAE. Since 2007 AL Hader General Contracting LLC has provided its clients with viable solutions to any complexities in their construction needs. The company’s strength lies in traditional construction methods re-enforced by creative, fresh approaches to cutting edge technologies and delivery systems. AL Hader Co. has assembled a team of construction professionals that offer a single source solution for all construction related needs. AL Hader Co. LLC supports its clients in every aspect from project inception to commission of the fully operational facility.” Al Hader is capable of executing professionally all types of works that the clients may require in Dubai and Northern emirates.",
+        spec: "Al Hadar is Specialized in:",
+        parali1: "Building Contracting.",
+        parali2: "Facilities Management Division.",
+        parali3: "Interiors Division.",
+        firsttitle: "Our Mission",
+        sectitle: "Vission",
+        thirtitle: "Our Approach",
+        paramiss: "Our mission is to deliver for our customers the best quality of construction services at competitive rates with highest level of professionalism and integrity resulting in long term relationships with our employees, customers, suppliers and subcontractors",
+        paraviss: "AL Hader Co. LLC is committed to building long-term relationships based on integrity Performance, value, and client satisfaction. We will continue to meet the changing needs our clients with our quality services delivered by the most qualified people. Our vision is to be recognized and respected as one of the premier total facility management companies in UAE.",
+        paraapp: "We strive to fulfill and exceed our customer expectations with quality, reliability and on time services.",
+      
 
-        paragraph2about:
-          "Abedous provides services when you need it, where you need it, by timely and by qualified and experienced technical staff. Our qualified, experienced and dedicated technicians are always ready to assist our customers in all their requirements. We strive to fulfill and exceed our customer expectations with quality, reliability and on time services.",
-        abouthead2: "Abedous Specialization",
 
-        service1: "Building Contracting",
-        service2: "Facilities Management Division",
-        service3: "Interiors Division",
 
-        abouthead1: "About Us",
+
       },
     },
     ar: {
       translation: {
         // Header
 
-        aaamm: "لماذا نثق في شركة أبيدوس؟",
-        paragraph1about:
-          "اكتسبت شركة عبيدوس للمقاولات العامة سمعتها كواحدة من شركات المقاولات الموثوقة والمتنوعة في عجمان - الإمارات العربية المتحدة. منذ عام 2006 ، زودت شركة أبيدوس للمقاولات العامة عملائها بحلول قابلة للتطبيق لأي تعقيدات في احتياجات البناء الخاصة بهم. تكمن قوة الشركة في أساليب البناء التقليدية معزز من خلال مناهج إبداعية وحديثة لأحدث التقنيات وأنظمة التسليم. قامت شركة عبيدوس بتجميع فريق من محترفو البناء الذين يقدمون حل مصدر واحد للجميع الاحتياجات المتعلقة بالبناء. تدعم شركة أبدوس عملائها في كل جانب من بداية المشروع إلى التكليف الكامل منشأة تشغيلية.",
-        abouthead1: "معلومات عنا",
-        paragraph2about:
-          "تقدم شركةأبيدوس الخدمات عندما تحتاجها ، وحيث تحتاجها ، وفي الوقت المناسب وبواسطة كادر فني مؤهل وذو خبرة. إن الفنيين المؤهلين وذوي الخبرة والمتخصصين لدينا مستعدون دائمًا لمساعدة عملائنا في جميع متطلباتهم. نحن نسعى جاهدين لتحقيق وتجاوز توقعات عملائنا من خلال خدمات الجودة والموثوقية وفي الوقت المحدد.",
-        abouthead2: "تخصص شركة أبيدوس",
-
-        service1: "مقاولات البناء",
-        service2: "قسم إدارة المرافق",
-        service3: "قسم الديكورات الداخلية",
+        titlepage: "معلومات عنا",
+        pagename:"معلومات عنا",
+        abouthead1: "شركة الحضر",
+        head: "معلومات عنا",
+        homepage: "الصفحة الرئيسية",
+        briefdesc: "نبذة مختصرة عنا",
+        moredesc: "اكتسبت الحضر للمقاولات العامة سمعتها باعتبارها واحدة من شركات المقاولات الموثوقة والمتنوعة في عجمان - الإمارات العربية المتحدة. منذ عام 2007 ، قدمت شركة الحاضر للمقاولات العامة ذ.م.م لعملائها حلولًا قابلة للتطبيق لأي تعقيدات في احتياجات البناء الخاصة بهم. تكمن قوة الشركة في أساليب البناء التقليدية المعززة بأساليب إبداعية وحديثة للتقنيات المتطورة وأنظمة التسليم. قامت شركة الحاضر بتجميع فريق من المتخصصين في مجال التشييد الذين يقدمون حل مصدر واحد لجميع الاحتياجات المتعلقة بالتشكيل. تدعم شركة الحاضر ش.م. الهدير قادر على تنفيذ مهني لجميع أنواع الأعمال التي قد يحتاجها العملاء في دبي والإمارات الشمالية.",
+        spec: "شركة الحضر متخصصة في:",
+        parali1: "مقاولات البناء",
+        parali2: "قسم إدارة المرافق",
+        parali3: "قسم الديكورات الداخلية",
+        firsttitle: "مهمتنا",
+        sectitle: "رؤيتنا",
+        thirtitle: "هدفنا",
+        paramiss: "مهمتنا هي أن نقدم لعملائنا أفضل جودة لخدمات البناء بأسعار تنافسية مع أعلى مستوى من الاحتراف والنزاهة مما يؤدي إلى علاقات طويلة الأمد مع موظفينا وعملائنا وموردينا ومقاولينا من الباطن",
+        paraviss: "تلتزم شركة الحضر ببناء علاقات طويلة الأمد على أساس الأداء والقيمة ورضا العملاء. سنستمر في تلبية الاحتياجات المتغيرة لعملائنا من خلال خدماتنا عالية الجودة التي يقدمها أكثر الأشخاص المؤهلين. تتمثل رؤيتنا في أن يتم الاعتراف بها واحترامها كواحدة من الشركات الرائدة في إدارة المرافق الشاملة في الإمارات العربية المتحدة.",
+        paraapp: "نحن نسعى جاهدين لتحقيق وتجاوز توقعات عملائنا من خلال خدمات الجودة والموثوقية وفي الوقت المحدد.",
+      
 
         // Footer
       },
@@ -50,14 +65,24 @@ i18next.init({
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
 
-document.querySelector("#aaamm").innerHTML = i18next.t("aaamm");
-document.querySelector("#abouthead1").innerHTML = i18next.t("abouthead1");
-document.querySelector("#paragraph1about").innerHTML =
-  i18next.t("paragraph1about");
-document.querySelector("#abouthead2").innerHTML = i18next.t("abouthead2");
-document.querySelector("#paragraph2about").innerHTML =
-  i18next.t("paragraph2about");
+document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
 
-document.querySelectorAll("li")[9].innerHTML = i18next.t("service1");
-document.querySelectorAll("li")[10].innerHTML = i18next.t("service2");
-document.querySelectorAll("li")[11].innerHTML = i18next.t("service3");
+
+
+document.querySelector("#head").innerHTML = i18next.t("head");
+document.querySelector("#pagename").innerHTML = i18next.t("pagename");
+document.querySelector("#homepage").innerHTML = i18next.t("homepage");
+document.querySelector("#briefdesc").innerHTML = i18next.t("briefdesc");
+document.querySelector("#moredesc").innerHTML = i18next.t("moredesc");
+document.querySelector("#spec").innerHTML = i18next.t("spec");
+document.querySelector("#parali1").innerHTML = i18next.t("parali1");
+document.querySelector("#parali2").innerHTML = i18next.t("parali2");
+document.querySelector("#parali3").innerHTML = i18next.t("parali3");
+document.querySelector("#firsttitle").innerHTML = i18next.t("firsttitle");
+document.querySelector("#sectitle").innerHTML = i18next.t("sectitle");
+document.querySelector("#thirtitle").innerHTML = i18next.t("thirtitle");
+document.querySelector("#paramiss").innerHTML = i18next.t("paramiss");
+document.querySelector("#paraviss").innerHTML = i18next.t("paraviss");
+document.querySelector("#paraapp").innerHTML = i18next.t("paraapp");
+
+
