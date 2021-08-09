@@ -10,7 +10,7 @@ i18next.init({
       translation: {
         // Header
 
-        address: "2 Al Nuaimia - Ajman - 9CQW+CGW.",
+        address: "",
         titlepage: "Contact Us",
         phrase: "We Love To Be In Touch",
         home: "Home",
@@ -44,7 +44,7 @@ i18next.init({
         butonsub: "ارسال",
         atyourserv: "نحن دائما في خدمتكم",
         emial: "البريد الالكتروني:",
-        address: "2 النعيمية - عجمان - 9CQW+CGW ",
+        address: "",
 
         // Footer
       },

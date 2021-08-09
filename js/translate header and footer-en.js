@@ -15,7 +15,7 @@ i18next.init({
         contacts: "Contact Us",
         language: "Language",
         linkat: "Quick Links",
-        adress: "2 Al Nuaimia - Ajman - 9CQW+CGW.",
+        adress: "",
         footabout: "About Al Hadar",
       },
     },
@@ -31,7 +31,7 @@ i18next.init({
         // jobs:"فرص العمل",
         language: "اللغة",
         linkat: "الروابط",
-        adress: "2 النعيمية - عجمان - 9CQW+CGW ",
+        adress: "",
 
         // adress: "9CQW+CGW - النعيمية 2 - عجمان",
         footabout: "عن شركتنا",
