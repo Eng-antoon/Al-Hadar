@@ -25,18 +25,26 @@ const Service = () => {
   // });
 
   return (
-    <div className="row portfolio-gallery">
+    <div className="row portfolio-gallery d-flex justify-content-center">
       {services.map(({ id, title, title_a, images, location, location_a }) => {
         const image = images.length > 0 ? images[0] : "";
 
         return (
           <div key={id} className="col-lg-4 col-md-6">
-            <div className="portflio-item position-relative mb-4">
+            <div
+              className="portflio-item position-relative mb-4"
+              style={{ width: "100%", height: "100%" }}
+            >
               <a href={`ashkal.html#${id}`}>
                 <img
                   src={`${baseURL}/storage/${image}`}
                   alt="img"
-                  className="img-fluid w-100"
+                  className="img-fluid w-100 aspect-ratio-1"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
                 />
                 <i className="overlay-item" />
                 <div className="portfolio-item-content">

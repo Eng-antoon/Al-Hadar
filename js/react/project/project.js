@@ -12,14 +12,14 @@ const Project = () => {
   React.useEffect(() => {
     const id = window.location.hash.substring(1);
     axios.get(`/projects/${id}`).then(({ data }) => {
+      console.log(data);
       setProject(data);
-      setServiceTitle(
+      setProjectTitle(
         currentLanguage == "en" ? data.title : data.title_a,
-        currentLanguage == "en" ? "About the Service" : "تفاصيل عن خدمة"
+        currentLanguage == "en" ? "About the project" : "تفاصيل عن المشروع"
       );
     });
   }, []);
-
   return (
     <>
       <Description
@@ -96,4 +96,4 @@ const setProjectTitle = (title, about) => {
   document.querySelector("#titlepage").innerHTML = about;
 };
 
-ReactDOM.render(<Project />, document.querySelector("#react-root"));
+ReactDOM.render(<Project />, document.querySelector("#react-root-project"));
