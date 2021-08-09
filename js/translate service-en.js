@@ -103,8 +103,8 @@ i18next.init({
 
 document.querySelector("#head1").innerHTML = i18next.t("head1");
 document.querySelector("#headline").innerHTML = i18next.t("headline");
-document.querySelector("#homepagelink").innerHTML = i18next.t("home");
-document.querySelector("#inpage").innerHTML = i18next.t("head1");
+// document.querySelector("#homepagelink").innerHTML = i18next.t("home");
+// document.querySelector("#inpage").innerHTML = i18next.t("head1");
 document.querySelector("#firstofpage").innerHTML = i18next.t("head1");
 document.querySelector("#introtopage").innerHTML = i18next.t("intro");
 

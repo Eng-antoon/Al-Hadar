@@ -54,11 +54,11 @@ i18next.init({
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
 
-// document.querySelector("#address").innerText = i18next.t("address")
+document.querySelector("#address").innerText = i18next.t("address")
 document.querySelector("#titlepage").innerText = i18next.t("titlepage");
 document.querySelector("#phrase").innerText = i18next.t("phrase");
-document.querySelector("#home").innerText = i18next.t("home");
-document.querySelector("#contactpage").innerText = i18next.t("contactpage");
+// document.querySelector("#home").innerText = i18next.t("home");
+// document.querySelector("#contactpage").innerText = i18next.t("contactpage");
 document.querySelector("#msgdelete").innerText = i18next.t("msgdelete");
 document.querySelector("#sendmsg").innerText = i18next.t("sendmsg");
 document.querySelector("#contactinfo").innerText = i18next.t("contactinfo");

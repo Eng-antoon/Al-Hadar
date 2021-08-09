@@ -70,8 +70,8 @@ i18next.init({
 document.querySelector("#titlepage").innerHTML = i18next.t("titlepage");
 
 document.querySelector("#head").innerHTML = i18next.t("head");
-document.querySelector("#pagename").innerHTML = i18next.t("pagename");
-document.querySelector("#homepage").innerHTML = i18next.t("homepage");
+// document.querySelector("#pagename").innerHTML = i18next.t("pagename");
+// document.querySelector("#homepage").innerHTML = i18next.t("homepage");
 document.querySelector("#briefdesc").innerHTML = i18next.t("briefdesc");
 document.querySelector("#moredesc").innerHTML = i18next.t("moredesc");
 document.querySelector("#spec").innerHTML = i18next.t("spec");
