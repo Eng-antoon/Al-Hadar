@@ -2,7 +2,7 @@
 // console.log(i18next)
 
 i18next.init({
-  lng: 'en', // if you're using a language detector, do not define the lng option
+  lng: 'ar', // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {

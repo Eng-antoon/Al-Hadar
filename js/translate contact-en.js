@@ -10,7 +10,7 @@ i18next.init({
       translation: {
         // Header
 
-        address: "P.O Box 18378 Ajman.UAE",
+        address: "2 Al Nuaimia - Ajman - 9CQW+CGW.",
         titlepage: "Contact Us",
         phrase: "We Love To Be In Touch",
         home: "Home",
@@ -47,8 +47,7 @@ i18next.init({
         butonsub: "ارسال",
         atyourserv: "نحن دائما في خدمتكم",
         emial: "البريد الالكتروني:",
-        
-        address: "صندوق بريد 18378 عجمان",
+        address: "2 النعيمية - عجمان - 9CQW+CGW ",
         
         // Footer
       },
