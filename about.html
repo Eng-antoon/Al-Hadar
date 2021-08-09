@@ -175,7 +175,6 @@
                 <h1 id="head" class="text-capitalize mb-4 text-lg">
                   Al Hadar Company
                 </h1>
-               
               </div>
             </div>
           </div>
@@ -234,7 +233,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="about-info-item mb-4 mb-lg-0">
                 <h3 id="firsttitle" class="mb-3">
-                  <span  class="text-color mr-2 text-md">01.</span>Our Mission
+                  <span class="text-color mr-2 text-md">01.</span>Our Mission
                 </h3>
                 <p id="paramiss">
                   Our mission is to deliver for our customers the best quality
@@ -391,5 +390,15 @@
     <!-- Translation Files localy -->
     <script src="js/translate header and footer-en.js"></script>
     <script src="js/translate about-en.js"></script>
+    <script>
+      if (currentLanguage == "ar") {
+        document.querySelector(
+          "body > div > section.section.about-2.position-relative > div > div > div:nth-child(1) > div"
+        ).style.textAlign = "right";
+        document.querySelector(
+          "body > div > section.about-info.section.pt-0"
+        ).style.textAlign = "right";
+      }
+    </script>
   </body>
 </html>
