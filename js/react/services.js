@@ -13,7 +13,6 @@ const Service = () => {
   React.useEffect(() => {
     axios.get("/services").then(({ data }) => {
       setServices(data);
-      console.log(data);
     });
   }, []);
 
@@ -28,7 +27,6 @@ const Service = () => {
   return (
     <div className="row portfolio-gallery">
       {services.map(({ id, title, title_a, images, location, location_a }) => {
-        const currentLanguage = localStorage.getItem("lang");
         const image = images.length > 0 ? images[0] : "";
 
         return (

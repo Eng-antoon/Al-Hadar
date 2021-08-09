@@ -20,9 +20,9 @@ if (currentLanguage == "ar") {
   const body = document.querySelector("body");
   body.setAttribute("dir", "rtl");
 
-  const navBar = document.querySelector(
-    "ul.navbar-nav.navbar-nav-scroll.animate__animated.animate__heartBeat"
-  );
+  // const navBar = document.querySelector(
+  //   "ul.navbar-nav.navbar-nav-scroll.animate__animated.animate__heartBeat"
+  // );
   // navBar.classList.remove("ms-auto");
   // navBar.classList.add("me-auto");
 

@@ -1,5 +1,3 @@
-console.log(i18next);
-
 i18next.init({
   lng: "en", // if you're using a language detector, do not define the lng option
 
@@ -16,7 +14,6 @@ i18next.init({
         titlehead: "حول المشروع",
         locationhead: "موقع المشروع",
         desc: "وصف بسيط عن المشروع",
-
       },
     },
   },
@@ -26,4 +23,3 @@ i18next.init({
 document.querySelector("#titlehead").innerHTML = i18next.t("titlehead");
 document.querySelector("#locationhead").innerHTML = i18next.t("locationhead");
 document.querySelector("#desc").innerHTML = i18next.t("desc");
-

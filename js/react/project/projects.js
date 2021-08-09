@@ -23,13 +23,20 @@ const translation = {
   },
 };
 
+// description: "askjckos"
+// description_a: "سنبتؤشسنميتنمشستين"
+// id: 2
+// images: (3) ["projects/415470634d760b7667ffcbc9d6ab8d86.jpg", "projects/52839ac03c7360b3a5c5885fe2db6f63.jpg", "projects/3657fdfc957a23627d20d7ba49cbef4e.jpg"]
+// short_description: "msklcskmclms"
+// short_description_a: "شسبنمشستنمب"
+// title: "klcms"
+
 const Projects = () => {
   const [projects, setProjects] = React.useState([]);
 
   React.useEffect(() => {
     prepareTextsLanguage();
     axios.get(`/projects`).then(({ data }) => {
-      console.log(projects);
       setProjects(data);
     });
   }, []);
@@ -51,36 +58,64 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <Images images={projects?.images?.length > 0 ? projects.images : []} />
+        <Project projects={projects} />
       </div>
     </>
   );
 };
 
-const Images = ({ images }) => (
-  <div className="container-fluid">
-    <div className="row portfolio-gallery">
-      {images.map((image) => (
-        <div className="col-lg-4 col-md-6">
-          <div className="portflio-item position-relative mb-4">
-            <a href="Projectdetails.html">
-              <img
-                src={`${baseURL}/storage/${image}`}
-                alt="project"
-                className="img-fluid w-100"
-              />
-              <i className="overlay-item" />
-              <div className="portfolio-item-content">
-                <h3 className="mb-0 text-white">Project Al Hera</h3>
-                <p className="text-white-50">The Address - Location</p>
+const Project = ({ projects }, i) => {
+  return (
+    <div className="container">
+      <div className="row portfolio-gallery d-flex justify-content-center">
+        {projects.map(
+          ({
+            id,
+            title,
+            title_a,
+            images,
+            short_description,
+            short_description_a,
+          }) => {
+            const image = images?.length > 0 ? images[0] : "";
+            return (
+              <div key={id} className="col-lg-4 col-md-6">
+                <div
+                  className="portflio-item position-relative mb-4"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <a href={`Projectdetails.html#${id}`}>
+                    <img
+                      src={`${baseURL}/storage/${image}`}
+                      alt="project"
+                      className="img-fluid w-100 aspect-ratio-1"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <i className="overlay-item" />
+                    <div className="portfolio-item-content">
+                      <h3 className="mb-0 text-white">
+                        {currentLanguage == "en" ? title : title_a}
+                      </h3>
+                      <p className="text-white-50">
+                        {currentLanguage == "en"
+                          ? short_description
+                          : short_description_a}
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-          </div>
-        </div>
-      ))}
+            );
+          }
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const prepareTextsLanguage = () => {
   document.querySelector("#titlesmall").innerHTML =
