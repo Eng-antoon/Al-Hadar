@@ -22,10 +22,10 @@ const Service = () => {
     const id = window.location.hash.substring(1);
     axios.get(`/services/${id}`).then(({ data }) => {
       setService(data);
-      setServiceTitle(
-        currentLanguage == "en" ? data.title : data.title_a,
-        currentLanguage == "en" ? "About the Service" : "تفاصيل عن خدمة"
-      );
+      // setServiceTitle(
+      //   currentLanguage == "en" ? data.title : data.title_a,
+      //   currentLanguage == "en" ? "About the Service" : "تفاصيل عن خدمة"
+      // );
     });
   }, []);
 
@@ -106,11 +106,11 @@ const Images = ({ images }) => {
   );
 };
 
-const setServiceTitle = (title, about) => {
-  document.querySelector(
-    "body > div > section.page-title.projectheadbg > div > div > div > div > h1"
-  ).innerHTML = title;
-  document.querySelector("#titlepage").innerHTML = about;
-};
+// const setServiceTitle = (title, about) => {
+//   document.querySelector(
+//     "body > div > section.page-title.projectheadbg > div > div > div > div > h1"
+//   ).innerHTML = title;
+//   document.querySelector("#titlepage").innerHTML = about;
+// };
 
 ReactDOM.render(<Service />, document.querySelector("#react-root"));

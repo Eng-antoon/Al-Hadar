@@ -6,19 +6,6 @@ const { axios } = window;
 const baseURL = `http://192.168.43.157:8000`;
 axios.defaults.baseURL = `${baseURL}/api`;
 
-// axios.get(`/services/`)
-//     .then(({ data }) => {
-//         data
-//         .forEach(({
-//             id,
-//             title,
-//             images,
-//         }) => {
-//             const image = `${url}/storage/${images[0]}`
-//             addServiceToServicesPage(id,image,title);
-//         })
-//     })
-
 axios.get(`/services`).then(({ data }) => {
   data.forEach(({ id, title, title_a, images }) => {
     const image = `${baseURL}/storage/${images[0]}`;
