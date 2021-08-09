@@ -19,8 +19,6 @@ const Service = () => {
   return (
     <>
       {services.map(({ id, title, description, title_a, description_a }) => {
-        const currentLanguage = localStorage.getItem("lang");
-
         return (
           <div key={id} className="col-lg-4 col-md-6 col-sm-6">
             <div className="service-item mb-5">

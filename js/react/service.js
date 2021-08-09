@@ -17,7 +17,6 @@ axios.defaults.baseURL = `${baseURL}/api`;
 
 const Service = () => {
   const [service, setService] = React.useState([]);
-  const currentLanguage = localStorage.getItem("lang");
 
   React.useEffect(() => {
     const id = window.location.hash.substring(1);

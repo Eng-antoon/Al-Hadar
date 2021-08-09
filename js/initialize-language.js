@@ -2,8 +2,12 @@ if (!localStorage.getItem("lang")) localStorage.setItem("lang", "en");
 
 const currentLanguage = localStorage.getItem("lang");
 
-const english = document.querySelectorAll("a.dropdown-item")[0];
-const arabic = document.querySelectorAll("a.dropdown-item")[1];
+const english = document.querySelector(
+  "#navbarsExample09 > form > ul > li:nth-child(1) > a"
+);
+const arabic = document.querySelector(
+  "#navbarsExample09 > form > ul > li:nth-child(2) > a"
+);
 
 english.style.cursor = "pointer";
 arabic.style.cursor = "pointer";
