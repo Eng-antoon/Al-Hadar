@@ -1539,12 +1539,27 @@ ul {
 }
 
 
-/* #video-background {
-	position: absolute;
+#video-background {
+	/* position: absolute; */
 	right: 0;
 	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: 100vw;
+	/* min-width: 100%;
+	min-height: 100%; */
+	width: 60vw;
 	height: auto; 
-} */
+}
+@media (max-width:1000px){
+
+
+  #video-background {
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: auto; 
+  }
+
+
+}
