@@ -1537,3 +1537,14 @@ ul {
 .aspect-ratio-1 {
   aspect-ratio: 1;
 }
+
+
+/* #video-background {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100vw;
+	height: auto; 
+} */
