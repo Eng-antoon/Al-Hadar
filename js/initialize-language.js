@@ -16,6 +16,7 @@ english.addEventListener("click", () => changeLanguage("en"));
 arabic.addEventListener("click", () => changeLanguage("ar"));
 
 function changeLanguage(lang) {
+  console.log("Here");
   localStorage.setItem("lang", lang);
   window.location.reload();
 }
