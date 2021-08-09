@@ -18,27 +18,23 @@ arabic.addEventListener("click", () => changeLanguage("ar"));
 function changeLanguage(lang) {
   if (lang == currentLanguage) return;
   localStorage.setItem("lang", lang);
-  setTimeout(() => {
-    window.location.reload();
-  }, 100);
+  window.location.reload();
 }
 
 if (currentLanguage == "ar") {
   const body = document.querySelector("body");
   body.setAttribute("dir", "rtl");
+  const headerTopInfo = document.querySelector(".header-top-info").parentNode;
+  headerTopInfo.classList.add("text-lg-left", "text-md-left");
+  headerTopInfo.classList.remove("text-lg-right", "text-md-right");
+  const email = document.querySelector(
+    "body > header > div > div > div > div.col-lg-10.col-md-8.text-center.text-lg-left.text-md-left > div > a > span"
+  );
+  email.style.marginRight = "10px";
+  // const envelop = document.querySelector(
+  //   "body > header > div > div > div > div.col-lg-10.col-md-8.text-center.text-lg-left.text-md-left > div > a"
+  // ).children[0].target;
 
-  // const navBar = document.querySelector(
-  //   "ul.navbar-nav.navbar-nav-scroll.animate__animated.animate__heartBeat"
-  // );
-  // navBar.classList.remove("ms-auto");
-  // navBar.classList.add("me-auto");
-
-  // const wavyAbedousGroup = document.querySelector(".wavy");
-  // wavyAbedousGroup?.setAttribute("dir", "ltr");
-
-  // const pageTitle = document.querySelector("title");
-  // pageTitle.innerText = "ابيدوس";
-
-  // const footerTeleNumber = document.querySelectorAll(".p-small")[1];
-  // footerTeleNumber.setAttribute("style", "direction: ltr;text-align: right;");
+  // envelop.classList.add("mr-2");
+  // envelop.classList.remove("ml-2");
 }
