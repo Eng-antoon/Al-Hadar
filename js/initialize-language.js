@@ -30,11 +30,6 @@ if (currentLanguage == "ar") {
   const email = document.querySelector(
     "body > header > div > div > div > div.col-lg-10.col-md-8.text-center.text-lg-left.text-md-left > div > a > span"
   );
-  email.style.marginRight = "10px";
-  // const envelop = document.querySelector(
-  //   "body > header > div > div > div > div.col-lg-10.col-md-8.text-center.text-lg-left.text-md-left > div > a"
-  // ).children[0].target;
 
-  // envelop.classList.add("mr-2");
-  // envelop.classList.remove("ml-2");
+  email.style.marginRight = "10px";
 }

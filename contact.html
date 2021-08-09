@@ -417,5 +417,13 @@
     <!-- Translation Files localy -->
     <script src="js/translate header and footer-en.js"></script>
     <script src="js/translate contact-en.js"></script>
+    <script>
+      if (currentLanguage == "ar") {
+        document.querySelector("#contact-form").style.textAlign = "right";
+        document.querySelector(
+          "body > div > section.contact-form-wrap.section > div > div > div.col-lg-5.col-sm-12"
+        ).style.textAlign = "right";
+      }
+    </script>
   </body>
 </html>
