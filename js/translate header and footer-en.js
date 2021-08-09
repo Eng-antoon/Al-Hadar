@@ -1,7 +1,7 @@
 const { i18next } = window;
 
 i18next.init({
-  lng: "ar", // if you're using a language detector, do not define the lng option
+  lng: currentLanguage, // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
@@ -17,7 +17,6 @@ i18next.init({
         linkat: "Quick Links",
         adress: "2 Al Nuaimia - Ajman - 9CQW+CGW.",
         footabout: "About Al Hadar",
-
       },
     },
     ar: {
@@ -37,7 +36,6 @@ i18next.init({
         // adress: "9CQW+CGW - النعيمية 2 - عجمان",
         footabout: "عن شركتنا",
 
-
         // Footer
       },
     },
@@ -53,7 +51,6 @@ document.querySelectorAll(".nav-link")[4].innerHTML = i18next.t("contacts");
 // document.querySelectorAll(".nav-link")[5].innerHTML = i18next.t("jobs");
 document.querySelectorAll("#dropdown03")[0].innerHTML = i18next.t("language");
 
-
 document.querySelector("#linkat").innerHTML = i18next.t("linkat");
 document.querySelectorAll(".footmen")[0].innerHTML = i18next.t("home");
 document.querySelectorAll(".footmen")[1].innerHTML = i18next.t("about");
@@ -63,6 +60,3 @@ document.querySelectorAll(".footmen")[4].innerHTML = i18next.t("contacts");
 // document.querySelectorAll(".footmen")[5].innerHTML = i18next.t("jobs");
 document.querySelector("#footabout").innerHTML = i18next.t("footabout");
 document.querySelector("#adress").innerHTML = i18next.t("adress");
-
-
-

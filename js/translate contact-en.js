@@ -3,7 +3,7 @@
 // const currentLanguage = localStorage.getItem("lang");
 
 i18next.init({
-  lng: "en", // if you're using a language detector, do not define the lng option
+  lng: currentLanguage, // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
@@ -24,10 +24,7 @@ i18next.init({
         butonsub: "Send Message",
         atyourserv: "We are always at your service",
         emial: "Email:",
-        
 
-
-      
         // About Us Page
       },
     },
@@ -48,7 +45,7 @@ i18next.init({
         atyourserv: "نحن دائما في خدمتكم",
         emial: "البريد الالكتروني:",
         address: "2 النعيمية - عجمان - 9CQW+CGW ",
-        
+
         // Footer
       },
     },
@@ -57,20 +54,23 @@ i18next.init({
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
 
-
 // document.querySelector("#address").innerText = i18next.t("address")
-document.querySelector("#titlepage").innerText = i18next.t("titlepage")
-document.querySelector("#phrase").innerText = i18next.t("phrase")
-document.querySelector("#home").innerText = i18next.t("home")
-document.querySelector("#contactpage").innerText = i18next.t("contactpage")
-document.querySelector("#msgdelete").innerText = i18next.t("msgdelete")
-document.querySelector("#sendmsg").innerText = i18next.t("sendmsg")
-document.querySelector("#contactinfo").innerText = i18next.t("contactinfo")
-document.querySelector("#nameplace").setAttribute("placeholder", i18next.t("nameplace"));
-document.querySelector("#emailplace").setAttribute("placeholder", i18next.t("emailplace"));
-document.querySelector("#yourmsgplace").setAttribute("placeholder", i18next.t("yourmsgplace"));
-document.querySelector("#butonsub").innerText = i18next.t("butonsub")
-document.querySelector("#atyourserv").innerText = i18next.t("atyourserv")
-document.querySelector("#emial").innerText = i18next.t("emial")
-
-
+document.querySelector("#titlepage").innerText = i18next.t("titlepage");
+document.querySelector("#phrase").innerText = i18next.t("phrase");
+document.querySelector("#home").innerText = i18next.t("home");
+document.querySelector("#contactpage").innerText = i18next.t("contactpage");
+document.querySelector("#msgdelete").innerText = i18next.t("msgdelete");
+document.querySelector("#sendmsg").innerText = i18next.t("sendmsg");
+document.querySelector("#contactinfo").innerText = i18next.t("contactinfo");
+document
+  .querySelector("#nameplace")
+  .setAttribute("placeholder", i18next.t("nameplace"));
+document
+  .querySelector("#emailplace")
+  .setAttribute("placeholder", i18next.t("emailplace"));
+document
+  .querySelector("#yourmsgplace")
+  .setAttribute("placeholder", i18next.t("yourmsgplace"));
+document.querySelector("#butonsub").innerText = i18next.t("butonsub");
+document.querySelector("#atyourserv").innerText = i18next.t("atyourserv");
+document.querySelector("#emial").innerText = i18next.t("emial");

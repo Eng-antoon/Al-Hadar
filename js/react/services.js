@@ -14,6 +14,12 @@ const Service = () => {
     axios.get("/services").then(({ data }) => {
       setServices(data);
     });
+    if (currentLanguage == "ar")
+      document
+        .querySelector(
+          "body > div > section.page-title.bg-1 > div > div > div > div > ul"
+        )
+        .setAttribute("dir", "rtl");
   }, []);
 
   // axios.get(`/services`).then(({ data }) => {

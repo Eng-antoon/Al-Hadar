@@ -5,7 +5,7 @@
 // const currentLanguage = localStorage.getItem("lang");
 
 i18next.init({
-  lng: "en", // if you're using a language detector, do not define the lng option
+  lng: currentLanguage, // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
@@ -14,7 +14,8 @@ i18next.init({
         heading1: "We strive to fulfill",
         heading2: "our customer expectations.",
         why: "Why Al-Hadar Company !!",
-        para1: "Al Hader provides services when you need it, where you need it, by timely and by qualified and experienced technical staff",
+        para1:
+          "Al Hader provides services when you need it, where you need it, by timely and by qualified and experienced technical staff",
         whatwedo: "What we do..",
         list1: "Resedintal and Commercial Buildings",
         list2: "Markets Buildings",
@@ -22,7 +23,6 @@ i18next.init({
         list4: "Warehouses",
         knowmore: "Know more about us",
 
-        
         // About Us Page
       },
     },
@@ -32,13 +32,14 @@ i18next.init({
         heading1: "نحن نسعى جاهدين لتحقيق توقعات عملائنا.",
         heading2: "",
         why: "لماذا شركة الحضر !!",
-        para1: "تقدم شركة الحضر الخدمات عندما تحتاجها ، وحيث تحتاجها ، وفي الوقت المناسب وبواسطة كادر فني مؤهل وذو خبرة",
+        para1:
+          "تقدم شركة الحضر الخدمات عندما تحتاجها ، وحيث تحتاجها ، وفي الوقت المناسب وبواسطة كادر فني مؤهل وذو خبرة",
         whatwedo: "ماذا نقدم ..",
         list1: "مباني سكنية وتجارية",
         list2: "مباني الأسواق",
         list3: "الفلل والتوسعات",
         list4: "المستودعات",
-        knowmore: "اعرف المزيد عنا",     
+        knowmore: "اعرف المزيد عنا",
         // Footer
       },
     },
@@ -58,5 +59,3 @@ document.querySelector("#list2").innerHTML = i18next.t("list2");
 document.querySelector("#list3").innerHTML = i18next.t("list3");
 document.querySelector("#list4").innerHTML = i18next.t("list4");
 document.querySelector("#knowmore").innerHTML = i18next.t("knowmore");
-
-

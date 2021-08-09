@@ -2,7 +2,7 @@
 // console.log(i18next)
 
 i18next.init({
-  lng: 'en', // if you're using a language detector, do not define the lng option
+  lng: currentLanguage, // if you're using a language detector, do not define the lng option
 
   resources: {
     en: {
@@ -14,9 +14,6 @@ i18next.init({
         projecttitle: "Projects",
         worktitle: "Our work",
         para: "We have so many projects, so you can take a look",
-       
-
-
 
         // About Us Page
       },
@@ -30,7 +27,6 @@ i18next.init({
         projecttitle: "المشاريع",
         worktitle: "عن عملنا",
         para: "لدينا العديد من المشاريع ، لذا يمكنك إلقاء نظرة",
-      
       },
     },
   },
@@ -45,4 +41,3 @@ document.querySelector("#home").innerHTML = i18next.t("home");
 document.querySelector("#projecttitle").innerHTML = i18next.t("projecttitle");
 document.querySelector("#worktitle").innerHTML = i18next.t("worktitle");
 document.querySelector("#para").innerHTML = i18next.t("para");
-

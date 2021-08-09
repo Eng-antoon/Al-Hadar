@@ -16,9 +16,11 @@ english.addEventListener("click", () => changeLanguage("en"));
 arabic.addEventListener("click", () => changeLanguage("ar"));
 
 function changeLanguage(lang) {
-  console.log("Here");
+  if (lang == currentLanguage) return;
   localStorage.setItem("lang", lang);
-  window.location.reload();
+  setTimeout(() => {
+    window.location.reload();
+  }, 100);
 }
 
 if (currentLanguage == "ar") {
